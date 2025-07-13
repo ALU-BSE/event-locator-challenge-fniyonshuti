@@ -2,7 +2,7 @@
 
 A modern, responsive web application that allows users to search and discover events happening in their city. Built with HTML5, CSS3, JavaScript, and Bootstrap 5.
 
-## 🎯 Features
+##  Features
 
 ### Core Functionality
 - **Event Search**: Search events by name or location
@@ -17,7 +17,7 @@ A modern, responsive web application that allows users to search and discover ev
 - **Bootstrap Icons**: Visual icons for better user experience
 - **Gradient Backgrounds**: Beautiful color gradients throughout the app
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 - A modern web browser (Chrome, Firefox, Safari, Edge)
@@ -46,7 +46,7 @@ event-locator-app/
 └── README.md              # This file
 ```
 
-## 📱 How to Use
+##  How to Use
 
 ### Home Page (`index.html`)
 1. **Search Events**: Enter keywords in the search bar to find events by name or location
@@ -61,11 +61,11 @@ event-locator-app/
 - **No Results**: If no events match your criteria, a friendly message is displayed
 
 ### Event Details (`event-details.html`)
-- **Complete Information**: View full event details including image and description
+- **Complete Information**: View full event details, including image and description
 - **Navigation**: Use the "Back to Events" button to return to the event list
 - **Responsive Layout**: Details are displayed in a responsive grid layout
 
-## 🎨 Design Features
+##  Design Features
 
 ### Color Scheme
 - **Primary Gradient**: Blue to purple (`#667eea` to `#764ba2`)
@@ -79,7 +79,7 @@ event-locator-app/
 - **Shadow Effects**: Subtle shadows for depth and visual hierarchy
 - **Responsive Grid**: Bootstrap grid system for mobile compatibility
 
-## 🔧 Technical Details
+##  Technical Details
 
 ### Technologies Used
 - **HTML5**: Semantic markup and structure
@@ -93,14 +93,14 @@ event-locator-app/
 - Firefox
 - Safari
 - Edge
-- Mobile browsers (iOS Safari, Chrome Mobile)
+
 
 ### Data Management
 - **Static Data**: Event information stored in `js/events-data.js`
 - **Search Criteria**: Stored in browser localStorage
 - **No Database Required**: Lightweight, client-side application
 
-## 📋 Sample Events
+## Sample Events
 
 The app includes sample events across different categories in Kigali, Rwanda:
 
@@ -119,7 +119,7 @@ The app includes sample events across different categories in Kigali, Rwanda:
 
 All events are scheduled for July 2025 and feature venues across Kigali, Rwanda's capital city.
 
-## 🛠️ Customization
+##  Customization
 
 ### Adding New Events
 1. Open `js/events-data.js`
