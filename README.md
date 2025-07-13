@@ -1,48 +1,138 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/ofC45k0K)
-[![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-2972f46106e565e64193e422d61a12cf1da4916b45550586e14ef0a7c637dd04.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=19932386)
-# afd-2023M-event-locator-Challenge
+# Event Locator App
 
+A modern, responsive web application that allows users to search and discover events happening in their city. Built with HTML5, CSS3, JavaScript, and Bootstrap 5.
 
-### Project Scenario: Event Locator
+## 🎯 Features
 
-#### Project Description
-Create an Event Locator web application that allows users to search for events happening in their city. 
-The application will display a list of events with details such as event name, date, location, 
-and a brief description. Users can filter events by date and category.
+### Core Functionality
+- **Event Search**: Search events by name or location
+- **Date Filtering**: Filter events by specific dates
+- **Category Filtering**: Filter events by category (Music, Sports, Art, Tech)
+- **Event Details**: View detailed information about each event
+- **Responsive Design**: Mobile-friendly interface using Bootstrap 5
 
-#### Features
-1. **Home Page**: A landing page with a search bar and filters for date and category.
-2. **Event List**: A page displaying a list of events based on the search criteria.
-3. **Event Details**: A page showing detailed information about a selected event.
-4. **Responsive Design**: Ensure the application is mobile-friendly using Bootstrap.
+### User Interface
+- **Modern Design**: Clean, user-friendly interface with warm color scheme
+- **Interactive Elements**: Hover effects and smooth animations
+- **Bootstrap Icons**: Visual icons for better user experience
+- **Gradient Backgrounds**: Beautiful color gradients throughout the app
 
-#### Tasks
+## 🚀 Getting Started
 
-1. **Setup Project Structure**
-   - Create the project directory and subdirectories for HTML, CSS, and JavaScript files.
-   - Include Bootstrap via CDN in the project.
+### Prerequisites
+- A modern web browser (Chrome, Firefox, Safari, Edge)
+- No additional software installation required
 
-2. **Home Page**
-   - Create `index.html` with a search bar and filters for date and category.
-   - Style the page using Bootstrap and custom CSS.
+### Installation
+1. Clone or download the project files
+2. Open the project folder in your file explorer
+3. Navigate to the `html` folder
+4. Open `index.html` in your web browser
 
-3. **Event List Page**
-   - Create `events.html` to display a list of events.
-   - Use JavaScript to dynamically generate event cards based on search criteria.
-   - Style the event cards using Bootstrap.
+### File Structure
+```
+event-locator-app/
+├── html/
+│   ├── index.html          # Home page with search functionality
+│   ├── events.html         # Event list page
+│   └── event-details.html  # Event details page
+├── css/
+│   └── style.css          # Custom styles and responsive design
+├── js/
+│   ├── events-data.js     # Sample event data
+│   ├── index.js           # Home page functionality
+│   ├── events.js          # Event list and filtering logic
+│   └── event-details.js   # Event details page logic
+└── README.md              # This file
+```
 
-4. **Event Details Page**
-   - Create `event-details.html` to show detailed information about a selected event.
-   - Use JavaScript to populate the page with event details.
-   - Style the page using Bootstrap.
+## 📱 How to Use
 
-5. **JavaScript Functionality**
-   - Implement search functionality to filter events by date and category.
-   - Use JavaScript to fetch and display event data.
-   - Add event listeners for user interactions.
+### Home Page (`index.html`)
+1. **Search Events**: Enter keywords in the search bar to find events by name or location
+2. **Filter by Date**: Use the date picker to filter events by specific dates
+3. **Filter by Category**: Select a category from the dropdown menu
+4. **Submit Search**: Click the "Search" button to view filtered results
 
-6. **Responsive Design**
-   - Ensure all pages are responsive using Bootstrap's grid system and utilities.
-   - Test the application on different screen sizes.
+### Events List (`events.html`)
+- **Event Cards**: Each event is displayed in a beautiful card format
+- **Event Information**: Cards show event name, date, location, category, and description
+- **View Details**: Click "View Details" to see complete event information
+- **No Results**: If no events match your criteria, a friendly message is displayed
 
-#### [Resources](https://github.com/ALU-BSE/afd-2023m-week-8-challenge/blob/main/assignment_resources.md)
+### Event Details (`event-details.html`)
+- **Complete Information**: View full event details including image and description
+- **Navigation**: Use the "Back to Events" button to return to the event list
+- **Responsive Layout**: Details are displayed in a responsive grid layout
+
+## 🎨 Design Features
+
+### Color Scheme
+- **Primary Gradient**: Blue to purple (`#667eea` to `#764ba2`)
+- **Accent Colors**: Warm orange to red (`#ff9a56` to `#ff6b6b`)
+- **Background**: Soft light gray (`#f8f9fa`)
+- **Text**: Warm gray tones for optimal readability
+
+### UI Components
+- **Rounded Corners**: 20px border radius for modern appearance
+- **Smooth Animations**: Hover effects and transitions
+- **Shadow Effects**: Subtle shadows for depth and visual hierarchy
+- **Responsive Grid**: Bootstrap grid system for mobile compatibility
+
+## 🔧 Technical Details
+
+### Technologies Used
+- **HTML5**: Semantic markup and structure
+- **CSS3**: Custom styling with gradients and animations
+- **JavaScript**: Dynamic content loading and filtering
+- **Bootstrap 5**: Responsive framework and components
+- **Bootstrap Icons**: Visual icons for enhanced UX
+
+### Browser Compatibility
+- Chrome (recommended)
+- Firefox
+- Safari
+- Edge
+- Mobile browsers (iOS Safari, Chrome Mobile)
+
+### Data Management
+- **Static Data**: Event information stored in `js/events-data.js`
+- **Search Criteria**: Stored in browser localStorage
+- **No Database Required**: Lightweight, client-side application
+
+## 📋 Sample Events
+
+The app includes sample events across different categories in Kigali, Rwanda:
+
+### Music Events
+- **City Jazz Festival** (July 10, 2025) - BK Arena, Kigali
+- **Rock Concert Night** (July 18, 2025) - Amahoro Stadium, Kigali
+
+### Tech Events
+- **Tech Innovators Expo** (July 15, 2025) - Nyarugenge Expo Center, Kigali
+
+### Art Events
+- **Modern Art Showcase** (July 12, 2025) - Rebertory Art Gallery, Kigali
+
+### Sports Events
+- **City Marathon** (July 20, 2025) - Kigali City, Rwanda
+
+All events are scheduled for July 2025 and feature venues across Kigali, Rwanda's capital city.
+
+## 🛠️ Customization
+
+### Adding New Events
+1. Open `js/events-data.js`
+2. Add new event objects to the `eventsData` array
+3. Include all required fields: `id`, `name`, `date`, `location`, `category`, `description`, `image`
+
+### Modifying Styles
+1. Edit `css/style.css` to change colors, spacing, or animations
+2. Update Bootstrap classes in HTML files for layout changes
+3. Modify JavaScript files for functionality changes
+
+### Adding Categories
+1. Update the category dropdown in `html/index.html`
+2. Add new category options as needed
+3. Ensure events in `events-data.js` use the new category names
+

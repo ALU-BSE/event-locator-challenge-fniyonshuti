@@ -1,0 +1,201 @@
+/* style.css - Custom styles for Event Locator App */
+
+body {
+    font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+    background: #f8f9fa;
+    color: #495057;
+}
+
+.navbar {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    box-shadow: 0 2px 15px rgba(102, 126, 234, 0.15);
+}
+
+.navbar .navbar-brand {
+    color: #fff !important;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.hero-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    border-radius: 20px;
+    padding: 3rem 2rem 2.5rem 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 32px rgba(102, 126, 234, 0.15);
+    text-align: center;
+}
+
+#searchForm {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    padding: 2rem 1.5rem;
+    border: 1px solid #e9ecef;
+}
+
+#searchForm input,
+#searchForm select {
+    border-radius: 12px;
+    min-height: 48px;
+    border: 2px solid #e9ecef;
+    transition: border-color 0.3s ease;
+}
+
+#searchForm input:focus,
+#searchForm select:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+}
+
+#searchForm button {
+    border-radius: 12px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    background: linear-gradient(135deg, #ff9a56 0%, #ff6b6b 100%);
+    border: none;
+    min-height: 48px;
+    transition: transform 0.2s ease;
+}
+
+#searchForm button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(255, 154, 86, 0.4);
+}
+
+.event-card {
+    margin-bottom: 1.5rem;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    overflow: hidden;
+    background: #fff;
+}
+
+.event-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.event-card .card-img-top {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.event-card .card-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #495057;
+    margin-bottom: 0.5rem;
+}
+
+.event-card .card-text {
+    color: #6c757d;
+    line-height: 1.6;
+}
+
+.event-card .btn-primary {
+    background: linear-gradient(135deg, #ff9a56 0%, #ff6b6b 100%);
+    border: none;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    border-radius: 12px;
+    padding: 0.75rem 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.event-card .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(255, 154, 86, 0.4);
+}
+
+/* Event Details */
+#eventDetails.card {
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    border: none;
+    background: #fff;
+}
+
+#eventDetails h2 {
+    color: #495057;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+#eventDetails img {
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+#eventDetails p {
+    color: #6c757d;
+    line-height: 1.6;
+    margin-bottom: 0.75rem;
+}
+
+/* Back button styling */
+.btn-secondary {
+    background: linear-gradient(135deg, #6c757d 0%, #495057 100%);
+    border: none;
+    border-radius: 12px;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(108, 117, 125, 0.4);
+}
+
+/* Alert styling */
+.alert {
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.alert-warning {
+    background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
+    color: #856404;
+}
+
+.alert-danger {
+    background: linear-gradient(135deg, #f8d7da 0%, #fab1a0 100%);
+    color: #721c24;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 767px) {
+    .hero-section {
+        padding: 2rem 1rem 1.5rem 1rem;
+        border-radius: 15px;
+    }
+
+    #searchForm {
+        padding: 1.5rem 1rem;
+        border-radius: 15px;
+    }
+
+    .event-card .card-img-top {
+        height: 160px;
+    }
+
+    .event-card {
+        border-radius: 15px;
+    }
+
+    .event-card .card-img-top {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+}
