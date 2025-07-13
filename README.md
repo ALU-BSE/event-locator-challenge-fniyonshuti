@@ -1,4 +1,4 @@
-# Event Locator App
+# Event Locator web application
 
 A modern, responsive web application that allows users to search and discover events happening in their city. Built with HTML5, CSS3, JavaScript, and Bootstrap 5.
 
